@@ -1,0 +1,34 @@
+@mixin name
+    margin: 0 auto
+    width: 113px
+    height: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    font-size: 11px
+    line-height: 11px
+    text-transform: uppercase
+    background-color: #000
+    color: #FFFFFF
+    line-height: 0
+
+@mixin header
+    font-weight: bold
+    font-size: 38px
+    line-height: 48px
+    text-transform: uppercase
+    color: #222222
+    text-align: center
+    margin-top: 30px
+
+@mixin subheader
+    font-size: 17px
+    line-height: 21px
+    color: #222222
+    text-align: center
+    margin-top: 1px
+
+@mixin btn-hover
+    &:hover    
+        background: linear-gradient(0deg, $main_color_1 0%, $main_color_1 100%)

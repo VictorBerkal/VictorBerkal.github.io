@@ -1,0 +1,115 @@
+.promo{
+    padding: 21px 93px;
+    min-height: 650px;
+    background: url('../img/bg/bg_run.jpg') center (center/cover) no-repeat;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__header{
+        margin-top: 91px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 42px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__subheader{
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__icons{
+        margin-top: 60px;
+        width: 424px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon{
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;   
+        color: #FFFFFF;
+        width: 106px;
+        img{
+            margin: 0 auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-top: 12px;
+        a{
+            color:#FFFFFF
+        }
+    }
+}
+
+@media ( max-width: 991px){
+    .promo{
+        &__wrapper{
+            align-items: center;
+        }
+        &__header{
+            font-size: 29px;
+            line-height: 29px;            
+        }
+        &__subreader{
+          font-size: 21px;
+          line-height: 21px;
+          margin-top: 8px;  
+        }
+        &__link{
+            font-size: 11px;
+        }
+    }
+}
+
+@media ( max-width: 767px){
+    .promo{
+        padding-left: 40px;
+        padding-right: 40px;
+        &__header{
+            margin-top: 79px;         
+        }
+        &__subheader{
+            margin-top: 0; 
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+@media ( max-width: 576px){
+    .promo{
+        min-height: 500px;
+        &__header{
+            margin-top: 38px;
+            font-size: 19px;
+            line-height: 19px;            
+        }
+        &__subreader{
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 0;  
+        }
+        &__link{
+            font-size: 11px;
+        }
+        &__icons{
+            display: none;
+        }
+    }
+}

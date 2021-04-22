@@ -1,0 +1,97 @@
+.carousel{
+    padding: 81px 0;
+
+    &__inner{
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+        div{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .slick-prev,
+    .slick-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -66px;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        border: none;
+    }
+
+    .slick-prev{
+        left: -66px;
+    }
+    
+}
+
+@media ( max-width: 1024px){
+    .carousel{
+        padding: 51px 0;
+    
+        &__inner{
+            width: 400px;
+        }
+        
+    }
+}
+@media ( max-width: 768px){
+    .carousel{
+        padding: 31px 0;
+        
+        &__inner{
+            .slick-dots{
+                position: absolute;
+                right: 0;
+                bottom: -30px;
+                left: 0;
+                z-index: 15;
+                display: flex;
+                justify-content: center;
+                margin-right: 15%;
+                margin-left: 15%;
+                list-style: none;
+                padding-left: 0;
+                .slick-active{
+                    opacity: 1;
+                }
+                li{
+                    box-sizing: content-box;
+                    flex: 0 1 auto;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                    border-radius: 100%;
+                    margin-left: 5px;
+                    cursor: pointer;
+                    background-color: #000;
+                    background-clip: padding-box;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    opacity: .6;
+                    transition: opacity .6s ease;
+                    button{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media ( max-width: 576px){
+    .carousel{
+        padding: 21px 0;
+        
+        &__inner{
+            width: 300px;
+        }
+        
+    }
+}
+// @media ( max-width: 991px)

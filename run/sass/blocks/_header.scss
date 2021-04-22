@@ -1,0 +1,114 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        width: 250px;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__oficial{
+        align-self: start;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+        text-align: center;
+        span{
+            display: block;
+            font-size: 18px;
+            line-height: 29px;  
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    &__phone{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        display: block;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover{
+            color:#FFFFFF;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+
+@media ( max-width: 991px){
+    .header{
+        &__logo{
+            width: 148px;
+        }
+        &__oficial{
+            align-self: auto;
+            span{
+                font-size: 16px;
+                line-height: 21px;  
+            }
+        }
+        &__phone{
+            font-size: 14px;
+        }
+    }     
+}
+
+@media ( max-width: 767px){
+    .header{
+        &__oficial {
+            span {
+                font-size: 15px;
+                line-height: 21px;
+                width: 155px;
+            }
+            div{
+                display: none;
+            }
+        }
+        &__phone{
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+
+}
+
+@media ( max-width: 576px){
+    .header{
+        justify-content: center;
+        flex-wrap: wrap;
+        &__logo{
+            width: 300px;
+        }
+        &__phone{
+            font-size: 21px;
+            line-height: 29px;
+        }
+        &__contacts{
+            margin-top: 35px;
+        }
+        &__oficial {
+            span{
+                display: none;
+            }
+        }
+        
+    }
+    // .header :nth-child(2n + 1){
+        
+    // }
+}
+
+

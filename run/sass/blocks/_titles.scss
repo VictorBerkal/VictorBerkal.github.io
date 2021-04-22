@@ -1,0 +1,46 @@
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #0D0D0D;
+    &-consultation{
+        max-width: 800px;
+        text-align: left;
+        color: #ffff;
+        line-height: 54px;
+        font-size: 36px;
+    }
+    &_catalog{
+        font-weight: normal;
+    }
+}
+
+@media ( max-width: 991px){
+    .title{
+        &-consultation{
+            text-align: center;
+            line-height: 45px;
+            font-size: 36px;
+        }
+    }
+}
+
+@media ( max-width: 767px){
+    .title{
+        font-size: 25px;
+        &-consultation{
+            line-height: 35px;
+        }
+    }
+}
+
+@media ( max-width: 576px){
+    .title{
+        font-size: 18px;
+        &-consultation{
+            font-size: 20px;
+        }
+    }
+}
+

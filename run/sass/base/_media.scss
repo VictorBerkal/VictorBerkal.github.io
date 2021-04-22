@@ -1,0 +1,25 @@
+
+// @media ( max-width: 1200px)
+// @media ( max-width: 767px)
+// @media ( max-width: 576px)
+
+.sm{
+    &-show{
+        display: none;
+    }
+    &-hidden{
+        display: block;
+    }
+}
+
+@media ( max-width: 767px){
+    .sm{
+        &-show{
+            display: block;
+        }
+        &-hidden{
+            display: none;
+        }
+    }
+    
+}

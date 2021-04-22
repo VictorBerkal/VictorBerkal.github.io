@@ -1,0 +1,44 @@
+.form{
+    margin-top: 36px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    input{
+        padding: 0 20px;
+        height: 54px;
+        border-radius: 5px;
+        margin-bottom: 11px;
+        border:none;
+
+    }
+    button{
+        margin-top: 6px;
+    }
+
+    .error{
+        border: 1px solid red;
+    }
+    label.error{
+        border: none;
+        font-size: 11px;
+        line-height: 11px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: red;
+    }
+
+}
+
+
+
+@media ( max-width: 991px){
+    .form{
+        margin: 0 auto;
+    }
+   
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}

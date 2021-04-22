@@ -1,0 +1,75 @@
+.button{
+    background-color: $main_color_1;
+    width: 153px;
+    height: 32px;
+    border-radius: 5px;    
+    border: none;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    &-header{
+        margin-top: 6px;
+    }
+
+    &-main{
+        margin-top: 80px;
+        width: 300px;
+        height: 50px;
+
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    &-consultation{
+        width: 300px;
+        height: 58px;
+        font-size: 16px;
+    }
+
+    &_catalog{
+        width: 131px;
+        height: 40px;
+        margin-left: 30px;
+    }
+    
+
+}
+
+@media ( max-width: 991px){
+    .button{
+        &-header{
+            margin-top: 2px;
+        }
+    }
+}
+
+@media ( max-width: 767px){
+    .button{
+        &-header{
+            width: 130px;
+            height: 32px;
+            font-weight: 800;
+            font-size: 10px;
+        }
+    }
+}
+
+@media ( max-width: 576px){
+    .button{
+        &-header{
+            width: 199px;
+            height: 50px;
+            font-size: 16px;
+        }
+        &-main{
+            margin-top: 60px;
+            width: 226px;
+            height: 42px;
+            font-size: 14px;
+        }
+    }
+}
